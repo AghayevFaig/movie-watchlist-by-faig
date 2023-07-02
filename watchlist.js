@@ -1,6 +1,6 @@
 const watchlistContainer=document.getElementById('watchlist-container')
 
-let watchlistArray=JSON.parse(localStorage.getItem('watchlist') || [])
+let watchlistArray=JSON.parse(localStorage.getItem('watchlist')) || []
 
 
 document.addEventListener('click',(e)=>{
