@@ -19,7 +19,7 @@ searchBtn.addEventListener("click"||'keypress',()=>{
 startContent.style.display='block'
 
 function apiCall(value){
-  fetch(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=6a616cc4`)
+  fetch(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=3a43dcb5`)
   .then(res => res.json())
   .then(data => {
     const movies=data.Search
