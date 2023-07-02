@@ -37,7 +37,7 @@ function getMovies(movies){
 
   movies.forEach(movie => {
     
-  fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=3a43dcb5&`)
+  fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=3a43dcb5`)
   .then(res => res.json())
   .then(data => {
     movieArray.push({
