@@ -5,7 +5,7 @@ const startContent=document.getElementById('start-content')
 const baseURL='https://www.omdbapi.com/'
 const apiKey='apikey=4ede2a67'
 let moviesResultArray=[]
-let watchlistArray=JSON.parse(localStorage.getItem('watchlist') || [])
+let watchlistArray=JSON.parse(localStorage.getItem('watchlist')) || []
 console.log(watchlistArray)
 
 searchBtn.addEventListener("click"||'keypress',()=>{
