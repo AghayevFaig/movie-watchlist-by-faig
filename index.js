@@ -18,7 +18,7 @@ searchBtn.addEventListener("click"||'keypress',()=>{
 startContent.style.display='block'
 
 function apiCall(value){
-  fetch(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=${apiKey}`)
+  fetch(`${baseURL}?s=${value}&type=movie&apikey=${apiKey}`)
   .then(res => res.json())
   .then(data => {
     const movies=data.Search
@@ -36,7 +36,7 @@ function getMovies(movies){
 
   movies.forEach(movie => {
     
-  fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&type=movie&apikey=6a616cc4`)
+  fetch(`${baseURL}?i=${movie.imdbID}&type=movie&apikey=6a616cc4`)
   .then(res => res.json())
   .then(data => {
     movieArray.push({
