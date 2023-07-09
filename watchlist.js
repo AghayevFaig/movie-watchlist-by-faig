@@ -10,7 +10,6 @@ document.addEventListener('click',(e)=>{
     showMovies(watchlistArray)
   }
 })
-console.log(watchlistArray)
 showMovies(watchlistArray)
 function showMovies(data){
   if(data.length === 0){
