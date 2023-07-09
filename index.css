@@ -201,7 +201,16 @@ opacity: 0.8;
   }
   .movie{
     flex-direction: column;
+    display: block;
     font-size: 1em;
-    display:block;
+    margin: 0 auto;
+  }
+  .title{
+    font-size: 2em;
+    display: block;
+    width: 100%;
+  }
+  .information{
+    font-size: 1em;
   }
 }
