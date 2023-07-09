@@ -202,5 +202,6 @@ opacity: 0.8;
   .movie{
     flex-direction: column;
     font-size: 1em;
+    display:block;
   }
 }
