@@ -5,6 +5,7 @@
 }
 html, body {
   background-color: #121212;
+  font-family: 'Inter', sans-serif;
 }
 .header{
   background:  url('images/header-background.png') no-repeat;
