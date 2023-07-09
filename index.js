@@ -36,7 +36,7 @@ function getMovies(movies){
 
   movies.forEach(movie => {
     
-  fetch(`${baseURL}?i=${movie.imdbID}&type=movie&apikey=6a616cc4`)
+  fetch(`${baseURL}?i=${movie.imdbID}&type=movie&apikey=${apiKey}`)
   .then(res => res.json())
   .then(data => {
     movieArray.push({
@@ -67,8 +67,6 @@ document.addEventListener('click',(e)=>{
       watchlistArray.push(watchlisted)
     }
 
-
-    console.log(watchlistArray)
     localStorage.setItem('watchlist', JSON.stringify(watchlistArray))
   }
 })
