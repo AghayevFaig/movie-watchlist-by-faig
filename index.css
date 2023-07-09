@@ -25,6 +25,7 @@ html, body {
   text-decoration: none;
   color: inherit;
   font-size:2em;
+  margin-left: 1em;
 }
 .header a:hover{
 opacity: 0.8;
@@ -74,7 +75,6 @@ opacity: 0.8;
 }
 .start-content{
   width:300px; 
-  /* display: block;*/
   display: none;
   margin: 20% auto;
 }
@@ -178,9 +178,29 @@ opacity: 0.8;
 }
 @media(max-width:700px){
   .header{
+    padding: 2em;
+  }
+  .header h1{
+    font-size: 2em;
+  }
+  .header a{
+  font-size: 1em;
+  }
+  .search{
+  font-size: 0.5em;
+  }
+  .start-content{
+    width: 50%;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
     padding: 1em;
+  }
+  .start-content p{
+    font-size: 2em;
   }
   .movie{
     flex-direction: column;
+    font-size: 1em;
   }
 }
