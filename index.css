@@ -205,12 +205,19 @@ opacity: 0.8;
     font-size: 1em;
     margin: 0 auto;
   }
+  .information{
+    text-align: center;
+  }
   .title{
     font-size: 2em;
     display: block;
     width: 100%;
   }
-  .information{
+  .short-information{
+    font-size: 1em;
+  }
+  .plot{
+    width: 100%;
     font-size: 1em;
   }
 }
