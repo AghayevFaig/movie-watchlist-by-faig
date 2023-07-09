@@ -3,7 +3,7 @@ const searchBtn=document.getElementById('search-btn')
 const mainContentContainer=document.getElementById('main-content-container')
 const startContent=document.getElementById('start-content')
 const baseURL='https://www.omdbapi.com/'
-const apiKey='apikey=4ede2a67'
+const apiKey='6a616cc4'
 let moviesResultArray=[]
 let watchlistArray=JSON.parse(localStorage.getItem('watchlist') || "[]")
 
@@ -18,7 +18,7 @@ searchBtn.addEventListener("click"||'keypress',()=>{
 startContent.style.display='block'
 
 function apiCall(value){
-  fetch(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=6a616cc4`)
+  fetch(`https://www.omdbapi.com/?s=${value}&type=movie&apikey=${apiKey}`)
   .then(res => res.json())
   .then(data => {
     const movies=data.Search
