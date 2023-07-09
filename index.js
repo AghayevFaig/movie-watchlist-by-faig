@@ -60,7 +60,6 @@ function getMovies(movies){
 
 document.addEventListener('click',(e)=>{
   if(e.target.dataset.id){
-    console.log(e.target.dataset.id)
     const watchlisted=moviesResultArray.filter(movie=>movie.Id === e.target.dataset.id)[0]
     if(!watchlistArray.includes(watchlisted)){
 
